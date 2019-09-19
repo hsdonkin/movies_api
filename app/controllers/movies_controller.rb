@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
       @movies = Movie.all.order("title ASC").limit(1000)
       json_response(@movies)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -15,7 +15,7 @@ class MoviesController < ApplicationController
       @movie = Movie.find(movie_id)
       json_response(@movie)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -24,7 +24,7 @@ class MoviesController < ApplicationController
       @movie = Movie.random
       json_response(@movie)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -33,7 +33,7 @@ class MoviesController < ApplicationController
       @movie = Movie.longest
       json_response(@movie)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -42,7 +42,7 @@ class MoviesController < ApplicationController
       @movie = Movie.rating
       json_response(@movie)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -51,7 +51,7 @@ class MoviesController < ApplicationController
       @movie = Movie.popular
       json_response(@movie)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -61,7 +61,7 @@ class MoviesController < ApplicationController
       @movies = Movie.title_by_letter(letter)
       json_response(@movies)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -71,7 +71,7 @@ class MoviesController < ApplicationController
       @movies = Movie.year_released(year)
       json_response(@movies)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
@@ -81,7 +81,7 @@ class MoviesController < ApplicationController
       @movies = Movie.partial_title(title)
       json_response(@movies)
     else
-      json_response({:message => "Use a token for access"})
+      json_response({:message => "Use an apikey for access"})
     end
   end
 
