@@ -21,7 +21,6 @@ class Movie < ApplicationRecord
   end
 
   def format_production
-    binding.pry
     # eval converts successfully into an object, but because it's a string in the object, rails forgets that it has properties like an object and becomes a string again
     # company = self.production_companies
     # self.production_companies = eval(company)
