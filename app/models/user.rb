@@ -28,7 +28,7 @@ class User < ApplicationRecord
        # token_hash = BCrypt::Engine.hash_secret(Time.new.to_s ,token_salt).delete!("/.$\\")
        # token = Token.new(:token_salt => token_salt, :token_hash => token_hash)
        # token.save!
-       {:message => "Successful login. Use Authorization in headers for access to API.", :authorization => token.token_hash, :url_movies => "http://localhost:3000/movies"}
+       {:message => "Successful login. Use apikey in params for access to API.", :authorization => token.token_hash, :url_movies => "https://cryptic-ridge-59014.herokuapp.com/movies"}
      else
        {:message => "Sorry! Credentials invalid."}
      end
