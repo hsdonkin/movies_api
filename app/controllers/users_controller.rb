@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    json_response({:message => "Send a post request to '/register' to sign up! Enter username and password in Headers." , :username=>"", :password=>""})
+    json_response({:message => "Send a post request to http://cryptic-ridge-59014.herokuapp.com/register to sign up! Enter username and password in Headers." , :username=>"", :password=>""})
   end
 
 end

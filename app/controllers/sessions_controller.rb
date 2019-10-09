@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def login
-    json_response({:message => "Please Log In! Via Post Request to /login", :url => "http://localhost:3000/login", :username => "", :password => ""})
+    json_response({:message => "Please Log In via post request to /login, or register at /register", :login => "http:// cryptic-ridge-59014.herokuapp.com/login", :register =>"http:// cryptic-ridge-59014.herokuapp.com/register" :username => "username", :password => "password"})
   end
 
   def create
