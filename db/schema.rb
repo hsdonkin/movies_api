@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_20_213144) do
+ActiveRecord::Schema.define(version: 2019_10_21_200105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,12 +25,9 @@ ActiveRecord::Schema.define(version: 2019_08_20_213144) do
     t.string "original_title"
     t.text "overview"
     t.string "popularity"
-    t.string "production_companies"
-    t.string "production_countries"
     t.date "release_date"
     t.bigint "revenue"
     t.bigint "runtime"
-    t.string "spoken_languages"
     t.string "status"
     t.string "tagline"
     t.string "title"
