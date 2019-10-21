@@ -4,7 +4,7 @@ class Movie < ApplicationRecord
 
   def add_url
     if !self.url
-      self.url = "http://localhost:3000/movies/#{self.id}"
+      self.url = "https://evening-mountain-18323.herokuapp.com/movies/#{self.id}"
       self.save
     end
   end
